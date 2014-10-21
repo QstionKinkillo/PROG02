@@ -1,0 +1,73 @@
+/*Realiza las siguientes modificaciones en el programa anterior:
+a.Añade comentarios, entre otros:
+Nombre de clase, descripción y autor
+Comentario para la clase main y para cada una de las llaves de cierre
+b.Utiliza el operador de asignación para inicializar las variables a los valores que se indican en los mensajes.
+c.Utiliza la secuencia de escape correspondiente para generar un tabulador al principio de cada línea salvo de la primera*/
+/****************************************************************************************************************************/
+/*Autor: Yeray*/
+
+package ejerciciovariables;
+
+public class Ejerciciovariables {
+    
+    public enum sexo {V,M}
+    public static void main(String[] args) { /*Comentario clase principal*/
+        /*Solo se puede obtener 2 valores, TRUE o FALSE*/
+        boolean casado = true;
+        /*Valor maximo no modificable*/
+        final int nMAXIMO = 999999;
+        /*Dias de la semana de 1 a 7 con byte*/
+        byte diaSem[] = {1,2,3,4,5,6,7};
+        /*Dias del año que son 366 como maximo por lo que tendra que
+        ser del siguiente rango a byte que es short */
+        short diaAnual = 300;
+        /*Sexo, con dos posible valores: V o M, la clase esta definida por
+        encima de la principal*/
+        sexo genero = sexo.M;
+        /*Calcular los milisegundos desde el 01/01/1970  hasta la fecha*/
+        long miliSeg = 138853440L;
+        /*Con la variable float es suficiente para representar dos decimales*/
+        float totalFactura = (float) 1350.84;
+        /*Poblacion mundial del planeta Tierra son mas de 7 millones*/
+        long poblacionMundial = 7376471981L;
+        
+        
+        
+       /*Imprime en pantalla usando la orden PRINTLN*/
+        System.out.println("---EJERCICIO DE VARIABLES Y TIPOS DE DATOS---");
+        System.out.println("\tEl valor de la variable casado es " + casado);
+        System.out.println("\tEl valor de la variable nMAXIMO es " + nMAXIMO);
+        System.out.println("\tEl valor de la variable diaSem es " + diaSem[0]);
+        System.out.println("\tEl valor de la variable diaAnual es " + diaAnual);
+        System.out.println("\tEl valor de la variable genero es " + genero);
+        System.out.println("\tEl valor de la variable miliSeg es " + miliSeg);
+        System.out.println("\tEl valor de la variable totalFactura es " + totalFactura);
+        System.out.println("\tEl valor de la variable poblacionMundial es " + poblacionMundial);
+        
+        /*Imprime en pantalla usando la orden PRINT*/
+        System.out.print("---EJERCICIO DE VARIABLES Y TIPOS DE DATOS---");
+        System.out.print("\n\tEl valor de la variable casado es " + casado);
+        System.out.print("\n\tEl valor de la variable nMAXIMO es " + nMAXIMO);
+        System.out.print("\n\tEl valor de la variable diaSem es " + diaSem[0]);
+        System.out.print("\n\tEl valor de la variable diaAnual es " + diaAnual);
+        System.out.print("\n\tEl valor de la variable genero es " + genero);
+        System.out.print("\n\tEl valor de la variable miliSeg es " + miliSeg);
+        System.out.print("\n\tEl valor de la variable totalFactura es " + totalFactura);
+        System.out.print("\n\tEl valor de la variable poblacionMundial es " + poblacionMundial);
+        
+        /*Imprime en pantalla usando la orden PRINTF*/
+        System.out.printf("\n---EJERCICIO DE VARIABLES Y TIPOS DE DATOS---");
+        System.out.printf("\n\tEl valor de la variable casado es " + casado);
+        System.out.printf("\n\tEl valor de la variable nMAXIMO es " + nMAXIMO);
+        System.out.printf("\n\tEl valor de la variable diaSem es " + diaSem[0]);
+        System.out.printf("\n\tEl valor de la variable diaAnual es " + diaAnual);
+        System.out.printf("\n\tEl valor de la variable genero es " + genero);
+        System.out.printf("\n\tEl valor de la variable miliSeg es " + miliSeg);
+        System.out.printf("\n\tEl valor de la variable totalFactura es " + totalFactura);
+        System.out.printf("\n\tEl valor de la variable poblacionMundial es " + poblacionMundial);
+        
+        
+ /*Comentario de cierre de llave 1*/   }
+    
+ /*Comentario de cierre de llave 2*/}
