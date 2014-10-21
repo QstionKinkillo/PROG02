@@ -1,0 +1,29 @@
+/*Diseña un programa Java que calcule la suma, resta, multiplicación y división de dos números introducidos por teclado. 
+Incorpora también las funciones que permitan realizar la potencia de un número y la raíz cuadrada del otro.*/
+/*Autor:Yeray*/
+
+package ejercicio8;
+
+import java.util.Scanner;
+public class Ejercicio8 {
+    
+    static Scanner teclado = new Scanner(System.in);
+    public static void main(String[] args) {
+        int numeroUno, numeroDos;
+        int sum,res,mult,div,pot;
+        System.out.println("Introduce el primer numero");
+        numeroUno = teclado.nextInt();
+        System.out.println("Introduce el segundo numero");
+        numeroDos = teclado.nextInt();
+        sum = numeroUno + numeroDos;
+        System.out.println("El resultado de la suma es: "+sum);
+        res = numeroUno - numeroDos;
+        System.out.println("El resultado de la resta es: "+res);
+        mult = numeroUno * numeroDos;
+        System.out.println("El resultado de la multiplicacion es: "+mult);
+        div = numeroUno / numeroDos;
+        System.out.println("El resultado de la division es: "+div);
+        pot = numeroUno ^ numeroDos;
+        System.out.println("El resultado de la potencia es: "+pot);
+   } 
+}
