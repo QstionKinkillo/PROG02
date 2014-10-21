@@ -1,0 +1,27 @@
+/*5.- Diseña un programa Java que pida dos números por teclado, determine si el primero es múltiplo del segundo 
+y muestre el resultado.*/
+/*Autor: Yeray*/
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+
+    public static void main(String[] args) {
+        Scanner t = new Scanner(System.in);
+        
+        int primerNum = 0;
+        int segundoNum = 0;
+        
+        System.out.println("Escribe dos numeros");
+        primerNum = t.nextInt();
+        segundoNum = t.nextInt();
+        
+        if (primerNum % segundoNum == 0){
+            System.out.println("Es multiplo");
+        }else{
+            System.out.println("No es multiplo");
+        }
+        
+    }
+    
+}
