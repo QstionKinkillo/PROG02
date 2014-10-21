@@ -1,0 +1,31 @@
+/*Diseña un programa Java para resolver una ecuación de primer grado con una incógnita (x), 
+suponiendo que los coeficientes de la ecuación (C1 y C2) se introducen desde teclado.*/
+/************************************************************************************************/
+/*Autor: Yeray Moya*/
+
+package ejercicio7; 
+import java.util.Scanner; /* Importar plugin teclado*/
+   
+public class Ejercicio7 {
+
+    static Scanner entrada = new Scanner(System.in); /*Permite la entrada de datos por teclado*/
+    public static void main(String[] args) {
+        
+        int x,a,b;
+        
+        System.out.print("Inserta el valor de A");
+        a = entrada.nextInt();
+        System.out.print("Ingresa el valor de B");
+        b = entrada.nextInt();
+        
+        if(a !=0){
+            x = - b / a;
+            System.out.print("El resultado es: "+ x);
+            
+    }else if(b !=0){
+        
+        System.out.print("Solucion imposible");
+        
+       }
+    }    
+}
